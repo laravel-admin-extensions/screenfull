@@ -1,6 +1,11 @@
 # screenfull.js for Laravel-admin
 
+This is an extension to integrates screenfull.js into laravel-admin.
+
 ## Screenshot
+
+<img alt="screenfull" src="https://user-images.githubusercontent.com/2421068/51837126-68d0c380-233d-11e9-9a53-2247e2f80acc.png">
+
 
 ## Installation
 
