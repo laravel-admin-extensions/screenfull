@@ -1,6 +1,6 @@
 # screenfull.js for Laravel-admin
 
-This is an extension to integrates screenfull.js into laravel-admin.
+This is an extension to integrates [screenfull.js](https://github.com/sindresorhus/screenfull.js) into laravel-admin.
 
 ## Screenshot
 
