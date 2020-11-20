@@ -23,10 +23,21 @@ class ScreenfullServiceProvider extends ServiceProvider
 
         Admin::booting(function () {
             Admin::js('vendor/laravel-admin-ext/screenfull/screenfull.min.js');
-            Admin::script('$("#screenfull-toggle").click(function(){screenfull.toggle($("body")[0])})');
+            Admin::script($this->script());
             Admin::navbar(function (Navbar $navbar) {
                 $navbar->right('<li><a id="screenfull-toggle"><i class="fa fa-arrows-alt"></i></a></li>');
             });
         });
+    }
+
+    private function script()
+    {
+        return <<<JS
+$("#screenfull-toggle").click(function () {
+    if (screenfull.isEnabled) {
+        screenfull.toggle($("body")[0])
+    }
+});
+JS;
     }
 }
